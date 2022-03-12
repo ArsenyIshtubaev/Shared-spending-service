@@ -19,45 +19,20 @@ public class Expense {
         return name;
     }
 
-    public Expense setName(String name) {
-        this.name = name;
-        return this;
-    }
-
     public Double getExpense() {
         return expense;
-    }
-
-    public Expense setExpense(Double expense) {
-        this.expense = expense;
-        return this;
     }
 
     public Member getToMember() {
         return toMember;
     }
 
-    public Expense setToMember(Member toMember) {
-        this.toMember = toMember;
-        return this;
-    }
-
     public Member getFrom() {
         return from;
     }
 
-    public Expense setFrom(Member from) {
-        this.from = from;
-        return this;
-    }
-
     public Long getId() {
         return id;
-    }
-
-    public Expense setId(Long id) {
-        this.id = id;
-        return this;
     }
 }
 

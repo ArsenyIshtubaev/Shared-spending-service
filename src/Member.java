@@ -12,17 +12,7 @@ public class Member {
         return name;
     }
 
-    public Member setName(String name) {
-        this.name = name;
-        return this;
-    }
-
     public Long getId() {
         return id;
-    }
-
-    public Member setId(Long id) {
-        this.id = id;
-        return this;
     }
 }

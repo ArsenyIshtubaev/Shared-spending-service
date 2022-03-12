@@ -18,35 +18,15 @@ public class Session {
         return name;
     }
 
-    public Session setName(String name) {
-        this.name = name;
-        return this;
-    }
-
     public Long getId() {
         return id;
-    }
-
-    public Session setId(Long id) {
-        this.id = id;
-        return this;
     }
 
     public ArrayList<Member> getListMemberSession() {
         return listMemberSession;
     }
 
-    public Session setListMemberSession(ArrayList<Member> listMemberSession) {
-        this.listMemberSession = listMemberSession;
-        return this;
-    }
-
     public ArrayList<Expense> getListExpenseSession() {
         return listExpenseSession;
-    }
-
-    public Session setListExpenseSession(ArrayList<Expense> listExpenseSession) {
-        this.listExpenseSession = listExpenseSession;
-        return this;
     }
 }
