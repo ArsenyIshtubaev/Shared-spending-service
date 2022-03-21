@@ -2,31 +2,41 @@ import java.util.ArrayList;
 
 public class Session {
 
-    private String name;
     private Long id;
-    private ArrayList<Member> listMemberSession;
-    private ArrayList<Expense> listExpenseSession;
+    private String name;
+    private ArrayList<Person> persons;
+    private ArrayList<Expense> expenses;
 
-    public Session(String name, Long id, ArrayList<Member> listMemberSession, ArrayList<Expense> listExpenseSession) {
-        this.name = name;
+    public Session(Long id, String name, ArrayList<Person> persons, ArrayList<Expense> expenses) {
         this.id = id;
-        this.listMemberSession = listMemberSession;
-        this.listExpenseSession = listExpenseSession;
-    }
-
-    public String getName() {
-        return name;
+        this.name = name;
+        this.persons = persons;
+        this.expenses = expenses;
     }
 
     public Long getId() {
         return id;
     }
 
-    public ArrayList<Member> getListMemberSession() {
-        return listMemberSession;
+    public String getName() {
+        return name;
     }
 
-    public ArrayList<Expense> getListExpenseSession() {
-        return listExpenseSession;
+    public ArrayList<Person> getPersons() {
+        return persons;
+    }
+
+    public ArrayList<Expense> getExpenses() {
+        return expenses;
+    }
+
+    public Session setPersons(ArrayList<Person> persons) {
+        this.persons = persons;
+        return this;
+    }
+
+    public Session setExpenses(ArrayList<Expense> expenses) {
+        this.expenses = expenses;
+        return this;
     }
 }

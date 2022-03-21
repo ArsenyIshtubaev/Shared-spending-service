@@ -1,11 +1,11 @@
-public class Member {
+public class Person {
 
-    private String name;
     private Long id;
+    private String name;
 
-    public Member(String name, Long id) {
-        this.name = name;
+    public Person(Long id, String name) {
         this.id = id;
+        this.name = name;
     }
 
     public String getName() {

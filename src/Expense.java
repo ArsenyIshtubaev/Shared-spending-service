@@ -1,38 +1,49 @@
+import java.math.BigDecimal;
+import java.util.Date;
+
 public class Expense {
 
-    private String name;
-    private Double expense;
-    private Member toMember;
-    private Member from;
     private Long id;
+    private String name;
+    private Date datetime;
+    private Person from;
+    private Person to;
+    private BigDecimal amount;
 
-
-    public Expense(String name, Double expense, Member toMember, Member member, Long id) {
-        this.name = name;
-        this.expense = expense;
-        this.toMember = toMember;
-        this.from = member;
+    public Expense(Long id, String name, Date datetime, Person from, Person to, BigDecimal amount) {
         this.id = id;
+        this.name = name;
+        this.datetime = datetime;
+        this.from = from;
+        this.to = to;
+        this.amount = amount;
+    }
+
+    public Date getDatetime() {
+        return datetime;
+    }
+
+    public Person getTo() {
+        return to;
     }
 
     public String getName() {
         return name;
     }
 
-    public Double getExpense() {
-        return expense;
+    public BigDecimal getAmount() {
+        return amount;
     }
 
-    public Member getToMember() {
-        return toMember;
-    }
-
-    public Member getFrom() {
+    public Person getFrom() {
         return from;
     }
 
     public Long getId() {
         return id;
     }
+
+    // String uuid = UUID.randomUUID().toString(); - генерация String id
+
 }
 
