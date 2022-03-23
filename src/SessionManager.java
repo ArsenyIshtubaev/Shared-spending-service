@@ -4,7 +4,7 @@ import java.util.Date;
 public interface SessionManager {
 
 
-    void add(Session session, Person person);
+    void addPerson(Session session, Person person);
 
     void createExpense (Session session, String nameExpense, Date datetime, Person from, Person to, BigDecimal amount);
 

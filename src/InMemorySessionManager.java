@@ -6,7 +6,7 @@ public class InMemorySessionManager implements SessionManager{
     static Long id = 0L;
 
     @Override
-    public void add(Session session, Person person) {
+    public void addPerson(Session session, Person person) {
 
         session.getPersons().add(person);
 
